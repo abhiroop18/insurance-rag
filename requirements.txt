@@ -1,0 +1,13 @@
+langchain
+langchain-community
+pypdf
+pdfplumber
+pymupdf
+langchain-text-splitters
+langchain-core
+qdrant-client 
+sentence-transformers
+langchain-huggingface 
+langchain-qdrant
+cohere
+deepeval

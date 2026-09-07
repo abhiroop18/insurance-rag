@@ -1,0 +1,209 @@
+[
+  {
+    "id": "q01",
+    "input": "What is the grace period if I pay my premium monthly?",
+    "expected_output": "15 days for monthly premium payment mode (30 days for all other modes).",
+    "retrieved_context": [
+      "\"Grace Period\" means the specified period of time, immediately following the premium due date during which premium payment can be made to renew or continue a policy in force without loss of continuity benefits.",
+      "The grace period for payment of the premium for all types of insurance policies shall be: fifteen days where premium payment mode is monthly and thirty days in all other cases."
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "q02",
+    "input": "How long is the free look period after I receive my policy document?",
+    "expected_output": "30 days from the date of receipt of the policy document (not applicable for policies with tenure less than a year).",
+    "retrieved_context": [
+      "Every insured of new individual health insurance policies, except for those policies with tenure of less than a year, shall be provided a free look period of 30 days beginning from the date of receipt of policy document, whether received electronically or otherwise, to review the terms and conditions of such policy."
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "q03",
+    "input": "What is the waiting period for pre-existing diseases under this policy?",
+    "expected_output": "Expenses related to treatment of a pre-existing disease (PED) and its direct complications are excluded until the expiry of 36 months of continuous coverage from the date of inception of the first policy with the insurer (Code Excl01).",
+    "retrieved_context": [
+      "Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 36 months of continuous coverage after the date of inception of the first policy with insurer as selected by the Insurer."
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "q04",
+    "input": "What percentage Loyalty Bonus does the Elevate policy provide, and is there a cap?",
+    "expected_output": "A Loyalty Bonus of 20% of the expiring or renewed Annual Sum Insured (whichever is lower) is added at the end of each Policy Year on continuous renewal, capped at a maximum accumulation of 100% of the Annual Sum Insured.",
+    "retrieved_context": [
+      "We will provide a Loyalty Bonus of 20% of expiring or renewed Annual Sum Insured (whichever is lower) at the end of each Policy Year irrespective of a claim being initiated in the Policy Year, provided that the Policy has been continuously renewed with the Company.",
+      "The Loyalty Bonus will not be accumulated for more than 100% of the Annual Sum Insured under any circumstances."
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "q05",
+    "input": "Under the Reset Benefit, will it trigger on the very first claim made in a Policy Year?",
+    "expected_output": "No. The Reset Benefit will not be triggered for the first claim made during the Policy Year; it applies only when the Annual Sum Insured (including Loyalty Bonus, Inflation Protector, Power Booster) is exhausted by subsequent claims.",
+    "retrieved_context": [
+      "The Annual Sum Insured including Loyalty Bonus, Inflation Protector (if opted and accrued), Power Booster (if opted and accrued) in respect of the Insured Person is insufficient as a result of previous claims paid in that Policy Year.",
+      "The Reset Benefit will not be triggered for the first claim made during the Policy Year."
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "q06",
+    "input": "What is the minimum BMI required to be eligible for the Bariatric Surgery Cover without any comorbidities?",
+    "expected_output": "A BMI greater than or equal to 40, without needing any comorbidities (or BMI ≥35 in conjunction with specified severe comorbidities such as obesity-related cardiomyopathy, coronary heart disease, severe sleep apnea, or uncontrolled Type 2 diabetes).",
+    "retrieved_context": [
+      "Body Mass Index (BMI) of the insured person has to be Greater than or equal to 40",
+      "OR Body Mass Index (BMI) of the insured person has to be Greater than or equal to 35 in conjunction with any of the following severe co-morbidities following failure of less invasive methods of weight loss: 1. Obesity-related cardiomyopathy 2. Coronary heart disease 3. Severe Sleep Apnea 4. Uncontrolled Type2 Diabetes."
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "q07",
+    "input": "What is the waiting period for Bariatric Surgery Cover, and can it be reduced?",
+    "expected_output": "The waiting period is 24 months from the date of inception of the first policy, but it is reduced to 30 days if the Insured Person has opted for the Jumpstart Add-on/Optional Cover.",
+    "retrieved_context": [
+      "This benefit has a waiting period of 24 months from date of inception of the first policy with Us.",
+      "However, the waiting period will be reduced to 30 days in case Insured Person has opted for Add ons/Optional Cover-Jumpstart."
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "q08",
+    "input": "How many consecutive days must Domiciliary Hospitalization continue before a claim becomes payable?",
+    "expected_output": "The Domiciliary Hospitalization must commence on written medical advice and continue for at least 3 consecutive days, after which payment is made from the first day of Domiciliary Hospitalization.",
+    "retrieved_context": [
+      "The Domiciliary Hospitalization has commenced on the written advice of a medical practitioner",
+      "and continues for at least 3 consecutive days in which case we will make payment under this Cover in respect of Medical Expenses incurred from the first day of Domiciliary Hospitalization."
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "q09",
+    "input": "Is asthma covered under Domiciliary Hospitalization?",
+    "expected_output": "No. Asthma, bronchitis, tonsillitis, and upper respiratory tract infections including laryngitis, pharyngitis, cough and cold, and influenza are specifically excluded from the Domiciliary Hospitalization cover.",
+    "retrieved_context": [
+      "We shall not be liable to pay for any claim under this Cover which arises from or in connection with any of the following: a) Asthma, bronchitis, tonsillitis and upper respiratory tract infection including laryngitis and pharyngitis, cough and cold, influenza;"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "q10",
+    "input": "How many days of Pre-Hospitalization and Post-Hospitalization medical expenses are covered relative to hospital admission and discharge?",
+    "expected_output": "Pre-Hospitalization Medical Expenses are covered for the 90 days immediately before admission to hospital, and Post-Hospitalization Medical Expenses are covered for the 180 days immediately following discharge from hospital.",
+    "retrieved_context": [
+      "We will cover the Pre-Hospitalization Medical Expenses incurred in respect of the Insured Person immediately 90 days before the Insured Person's Admission to Hospital.",
+      "We will cover the Post-Hospitalization Medical Expenses incurred in respect of the Insured Person immediately 180 days following the Insured Person's discharge from Hospital."
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "q11",
+    "input": "What is the maximum sum insured available under the Worldwide Cover optional cover, and what is the waiting period?",
+    "expected_output": "Worldwide Cover is available up to the Annual Sum Insured subject to a maximum of INR 3 Crore, with a waiting period of 2 years for any claim (no waiting period for Accidental Emergencies).",
+    "retrieved_context": [
+      "We will cover the Insured Person for Hospitalization expenses including planned Hospitalization incurred outside India and anywhere across the world including USA and Canada, up to the Annual Sum Insured subject to a maximum of INR. 3 Crore.",
+      "There will be a waiting period of 2 years for any claim under this cover.",
+      "There will be no waiting period for Accidental Emergencies."
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "q12",
+    "input": "For how many consecutive days and on a cumulative basis is Worldwide Cover available in a Policy Year?",
+    "expected_output": "The coverage is available for 45 consecutive days from the date of travel in a single trip, and up to 90 days cumulatively as a whole in a Policy Year. Expenses beyond 45 days from the date of travel are not covered in any case.",
+    "retrieved_context": [
+      "The coverage is available for 45 consecutive days from the date of travel in a single trip",
+      "and 90 days in a cumulative basis as a whole in a Policy Year.",
+      "Any expenses incurred beyond 45 days from date of travel shall not be covered in any case."
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "q13",
+    "input": "What is the maximum Sum Insured payable under the Critical Illness optional cover, and how many times can it be claimed?",
+    "expected_output": "The maximum limit is Rs. 50 Lakhs, and it can be claimed only once during the Insured Person's lifetime. No payment is made if the critical illness is first diagnosed within 90 days of the Period of Insurance Start Date, and claims are inadmissible if the illness arises from a Pre-Existing Disease.",
+    "retrieved_context": [
+      "We will pay You or Your Nominee / legal heir the Annual Sum Insured subject to a maximum limit of Rs.50 Lakhs in case You are diagnosed as suffering from one or more of the Critical Illnesses for the first time in your life, during the Policy Period.",
+      "However, We will not make any payment if You are first diagnosed as suffering from a Critical Illness within 90 days of the Period of Insurance Start Date.",
+      "This add on/ Optional Cover can be claimed by You only once during Your lifetime."
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "q14",
+    "input": "What coronary artery narrowing percentage is required for a claim to qualify under the Coronary Artery Disease critical illness definition?",
+    "expected_output": "The narrowing of the lumen of at least one coronary artery by a minimum of 75% and of two others by a minimum of 60%, as proven by coronary arteriography, regardless of whether coronary artery surgery has been performed.",
+    "retrieved_context": [
+      "The narrowing of the lumen of at least one coronary artery by a minimum of 75% and of two others by a minimum of 60%, as proven by coronary arteriography,",
+      "regardless of whether or not any form of coronary artery surgery has been performed."
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "q15",
+    "input": "How much does the Compassionate Visit benefit cover, and who qualifies as Immediate Family for this benefit?",
+    "expected_output": "The Compassionate Visit benefit indemnifies the cost of an economy class air/railway ticket for an Immediate Family Member if hospitalization extends beyond 5 consecutive days, capped at Rs. 20,000 per Policy Year. Immediate Family Member means the Insured's Spouse, Children, Parents, and Parents-in-law.",
+    "retrieved_context": [
+      "In event of Your Hospitalization, which in the opinion of the Medical Practitioner attending on You, extends beyond a period of 5 consecutive days, We will indemnify the cost of the economy class air ticket/railway ticket incurred by Your Immediate Family Member.",
+      "Our liability under this Optional Cover shall not in aggregate exceed Rs. 20,000 per Policy Year of Policy Period.",
+      "For the purpose of this extension, the term \"Immediate Family member\" would mean the Insured's Spouse, Children, Parents, and Parents-in-law."
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "q16",
+    "input": "What discount does the NRI Advantage cover provide, and what conditions must be met to retain it?",
+    "expected_output": "A 25% discount on base cover premium is provided to Non-Resident Indians/Overseas Citizens of India, provided they declare NRI/OCI status at issuance and each renewal, provide proof of overseas residence annually, provide relevant citizenship identity documents, and maintain an Indian bank account for premium/claims payment. If the insured ceases to be NRI/OCI, the discount is not applicable on renewal.",
+    "retrieved_context": [
+      "We will provide a discount of 25% on base cover premium to Non Resident Indians / Overseas Citizens of India if this cover has been opted,",
+      "provided that the Insured Person(s)- i. Provides declaration upon Policy Issuance and subsequent renewals...",
+      "ii. Provides proof of overseas residence for the upcoming year upon each renewal...",
+      "iii. Possesses and provides other relevant identity proof documents as mandated for Citizenship of India",
+      "iv. Has an Indian bank account for premium/claims payment."
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "q17",
+    "input": "If I choose the Network Advantage optional cover but get treated at a hospital outside the Preferred Provider Network, what happens to my claim?",
+    "expected_output": "A co-payment of 20% will be applicable on each and every claim if treatment is taken at a hospital not included in the \"Preferred Provider Network\" list, even though the Network Advantage cover otherwise gives a 10% discount on every renewal premium.",
+    "retrieved_context": [
+      "If the Insured Person has opted for this Optional Cover, the Insured Person shall be entitled for a discount of 10% on every renewal premium... subject to the following conditions:",
+      "I. The treatment... is taken in a hospital listed under the \"Preferred Provider Network\" List...",
+      "II. A co-payment of 20% will be applicable on each and every claim in case the treatment is taken in a hospital which is not included in the \"Preferred Provider Network\" List."
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "q18",
+    "input": "What is the moratorium period under this policy, and what does it mean for contestability of claims?",
+    "expected_output": "After completion of sixty continuous months of coverage (including portability and migration) in a health insurance policy, no policy and claim shall be contestable by the insurer on grounds of non-disclosure or misrepresentation, except on grounds of established fraud. This applies to the sums insured of the first policy, and separately to any enhanced sum insured from its own date of enhancement.",
+    "retrieved_context": [
+      "After completion of sixty continuous months of coverage (including portability and migration) in health insurance policy, no policy and claim shall be contestable by the insurer on grounds of non-disclosure, misrepresentation, except on grounds of established fraud. This period of sixty continuous months is called as moratorium period.",
+      "The moratorium would be applicable for the sums insured of the first policy.",
+      "Wherever, the sum insured is enhanced, completion of sixty continuous months would be applicable from the date of enhancement of sums insured only on the enhanced limits."
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "q19",
+    "input": "How quickly must ICICI Lombard respond to a cashless pre-authorization request and a discharge authorization request?",
+    "expected_output": "ICICI Lombard will respond within 1 hour of actual receipt of a pre-authorization request submitted through an empaneled network hospital with a complete set of documents, and will grant final authorization within 3 hours of receipt of the discharge authorization request from the hospital.",
+    "retrieved_context": [
+      "If You notify pre-authorization request for cashless facility through any of Our empaneled network hospitals along with complete set of documents & information, We will respond within 1 hour of the actual receipt of such pre-authorization request.",
+      "Further, we shall grant final authorization within three hours of the receipt of discharge authorization request from the hospital."
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "q20",
+    "input": "Within how many days of discharge must reimbursement claim documents be submitted, and what happens if there is a delay?",
+    "expected_output": "Claim documents must be submitted within 30 days of discharge from hospital (or, for post-hospitalization expenses, within 30 days from completion of the post-hospitalization period). If there is a delay beyond 30 days, ICICI Lombard may condone the delay provided the insured submits a valid reason in writing; the claim is then processed within 15 days of receipt of the claim form and documents.",
+    "retrieved_context": [
+      "You or someone claiming on Your behalf must promptly and in any event within 30 days of Your discharge from a Hospital (for post-hospitalization expenses, within 30 days from the completion of post-hospitalization period) deliver to Us the documentation...",
+      "In case there is a delay beyond 30 days in submission of claim documents, we may condone the delay provided the insured person submits a valid reason justifying the delay to us in writing.",
+      "The claim will be processed within 15 days of receipt of claim along with claim form and documents."
+    ],
+    "difficulty": "medium"
+  }
+]

@@ -1,0 +1,43 @@
+[project]
+name = "insurance-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "cohere>=7.0.9",
+    "deepeval>=4.1.10",
+    "docling>=2.121.0",
+    "fastapi>=0.141.1",
+    "guardrails-ai==0.11.0",
+    "guardrails-ai-detect-jailbreak>=0.1.6",
+    "guardrails-ai-detect-pii>=0.0.6",
+    "guardrails-ai-guardrails-pii>=1.0.8",
+    "langchain>=1.3.16",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.6.0",
+    "langchain-docling>=3.0.0",
+    "langchain-huggingface>=1.2.2",
+    "langchain-openai>=1.6.0",
+    "langchain-qdrant>=1.1.0",
+    "langchain-text-splitters>=1.1.2",
+    "langfuse>=4.14.5",
+    "mlflow>=3.15.1",
+    "pdfplumber>=0.11.10",
+    "prometheus-client>=0.26.0",
+    "prometheus-fastapi-instrumentator>=8.1.0",
+    "pymupdf>=1.28.2",
+    "pypdf>=6.16.1",
+    "qdrant-client>=1.19.0",
+    "requests>=2.34.2",
+    "sentence-transformers>=6.0.0",
+    "streamlit>=1.62.0",
+    "uvicorn>=0.52.4",
+]
+
+[project.scripts]
+insurance-rag = "insurance_rag:main"
+
+[build-system]
+requires = ["uv_build>=0.12.4,<0.13.0"]
+build-backend = "uv_build"

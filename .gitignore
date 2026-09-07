@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Environment variables
+.env
+.env.*
+
+# DeepEval
+.deepeval/
+
+# MLflow local tracking
+mlflow.db
+mlartifacts/
+
+# Local vector/database artifacts
+data/vectorstore/
+data/*.db
+
+# Generated evaluation outputs
+data/evaluation/reports/
+data/evaluation/regression/
+
+# OS
+.DS_Store
