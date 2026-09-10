@@ -1,0 +1,80 @@
+name: Insurance RAG CI
+
+on:
+  push:
+    paths:
+      - "params.yaml"
+
+  workflow_dispatch:
+
+jobs:
+  rag-evaluation:
+    runs-on: ubuntu-latest
+
+    env:
+      MLFLOW_TRACKING_URI: ${{ secrets.MLFLOW_TRACKING_URI }}
+      MLFLOW_TRACKING_USERNAME: ${{ secrets.MLFLOW_TRACKING_USERNAME }}
+      MLFLOW_TRACKING_PASSWORD: ${{ secrets.MLFLOW_TRACKING_PASSWORD }}
+
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
+
+      LANGFUSE_PUBLIC_KEY: ${{ secrets.LANGFUSE_PUBLIC_KEY }}
+      LANGFUSE_SECRET_KEY: ${{ secrets.LANGFUSE_SECRET_KEY }}
+      LANGFUSE_HOST: ${{ secrets.LANGFUSE_HOST }}
+
+    steps:
+
+      # ------------------------------------------------------------
+      # Checkout repository
+      # ------------------------------------------------------------
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ------------------------------------------------------------
+      # Setup Python
+      # ------------------------------------------------------------
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      # ------------------------------------------------------------
+      # Install uv
+      # ------------------------------------------------------------
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+
+      # ------------------------------------------------------------
+      # Install dependencies
+      # ------------------------------------------------------------
+
+      - name: Install dependencies
+        run: uv sync --locked
+
+      # ------------------------------------------------------------
+      # Run experiment
+      # ------------------------------------------------------------
+
+      - name: Run experiment
+        run: |
+          uv run python -m insurance_rag.execute_experiment_pipeline
+
+      # ------------------------------------------------------------
+      # Regression test
+      # ------------------------------------------------------------
+
+      - name: Run regression test
+        run: |
+          uv run python -m insurance_rag.tests.regression_test
+
+      # ------------------------------------------------------------
+      # Promotion test
+      # ------------------------------------------------------------
+
+      - name: Run promotion test
+        run: |
+          uv run python -m insurance_rag.tests.promotion_test
