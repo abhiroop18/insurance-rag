@@ -11,6 +11,12 @@ jobs:
   rag-evaluation:
     runs-on: ubuntu-latest
 
+    services:
+      qdrant:
+        image: qdrant/qdrant:latest
+        ports:
+          - 6333:6333
+
     env:
       MLFLOW_TRACKING_URI: ${{ secrets.MLFLOW_TRACKING_URI }}
       MLFLOW_TRACKING_USERNAME: ${{ secrets.MLFLOW_TRACKING_USERNAME }}
@@ -24,56 +30,35 @@ jobs:
       LANGFUSE_HOST: ${{ secrets.LANGFUSE_HOST }}
 
     steps:
-
-      # ------------------------------------------------------------
-      # Checkout repository
-      # ------------------------------------------------------------
-
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      # ------------------------------------------------------------
-      # Setup Python
-      # ------------------------------------------------------------
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.13"
 
-      # ------------------------------------------------------------
-      # Install uv
-      # ------------------------------------------------------------
-
       - name: Install uv
         uses: astral-sh/setup-uv@v6
-
-      # ------------------------------------------------------------
-      # Install dependencies
-      # ------------------------------------------------------------
 
       - name: Install dependencies
         run: uv sync --locked
 
-      # ------------------------------------------------------------
-      # Run experiment
-      # ------------------------------------------------------------
+      - name: Build document chunks
+        run: |
+          uv run python -m insurance_rag.ingestion.load_documents
+
+      - name: Build Qdrant vectorstore
+        run: |
+          uv run python -m insurance_rag.ingestion.build_vectorstore
 
       - name: Run experiment
         run: |
           uv run python -m insurance_rag.execute_experiment_pipeline
 
-      # ------------------------------------------------------------
-      # Regression test
-      # ------------------------------------------------------------
-
       - name: Run regression test
         run: |
           uv run python -m insurance_rag.tests.regression_test
-
-      # ------------------------------------------------------------
-      # Promotion test
-      # ------------------------------------------------------------
 
       - name: Run promotion test
         run: |

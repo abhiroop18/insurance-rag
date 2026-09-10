@@ -1,0 +1,262 @@
+{
+    "experiment": {
+        "name": "insurance-rag-experiments",
+        "experiment_id": "0",
+        "tracking_uri": "https://dagshub.com/abhiroop18/insurance-rag.mlflow"
+    },
+    "configuration": {
+        "noise_tag": {
+            "key": "use",
+            "value": "noise_threshold"
+        },
+        "number_of_runs": 3,
+        "noise_multiplier": 2.0,
+        "method": "2 x sample standard deviation"
+    },
+    "runs": [
+        {
+            "run_id": "feb7e02249e84abd8a705d73358dbcb8",
+            "run_name": "gentle-loon-836",
+            "status": "FINISHED",
+            "start_time": 1788784556417
+        },
+        {
+            "run_id": "daf591a6a2c7493c9e8a218fa48e0775",
+            "run_name": "honorable-wolf-24",
+            "status": "FINISHED",
+            "start_time": 1788784798285
+        },
+        {
+            "run_id": "9d6a662ce0914c6c9d919dfa7c1874f7",
+            "run_name": "spiffy-whale-617",
+            "status": "FINISHED",
+            "start_time": 1788785073978
+        }
+    ],
+    "metrics": {
+        "application_quality_application_correctness_geval": {
+            "category": "quality",
+            "direction": "higher_is_better",
+            "values": [
+                0.7489604769712179,
+                0.7519906093434318,
+                0.7533114881496235
+            ],
+            "mean": 0.7514208581547577,
+            "std": 0.0022307592611931666,
+            "min": 0.7489604769712179,
+            "max": 0.7533114881496235,
+            "range": 0.004351011178405528,
+            "noise_multiplier": 2.0,
+            "noise_threshold": 0.004461518522386333
+        },
+        "application_quality_application_completeness_geval": {
+            "category": "quality",
+            "direction": "higher_is_better",
+            "values": [
+                0.6852004289029539,
+                0.6623864437894529,
+                0.6507921872916642
+            ],
+            "mean": 0.6661263533280236,
+            "std": 0.017506340714516566,
+            "min": 0.6507921872916642,
+            "max": 0.6852004289029539,
+            "range": 0.034408241611289636,
+            "noise_multiplier": 2.0,
+            "noise_threshold": 0.03501268142903313
+        },
+        "application_quality_application_style_geval": {
+            "category": "quality",
+            "direction": "higher_is_better",
+            "values": [
+                0.9030043327927275,
+                0.9,
+                0.9037929086876741
+            ],
+            "mean": 0.9022657471601339,
+            "std": 0.002001417155608433,
+            "min": 0.9,
+            "max": 0.9037929086876741,
+            "range": 0.0037929086876741236,
+            "noise_multiplier": 2.0,
+            "noise_threshold": 0.004002834311216866
+        },
+        "application_safety_scope_adherence_geval": {
+            "category": "safety",
+            "direction": "higher_is_better",
+            "values": [
+                0.9409679534465872,
+                0.8897064416367059,
+                0.907227956285891
+            ],
+            "mean": 0.9126341171230614,
+            "std": 0.026054857119290974,
+            "min": 0.8897064416367059,
+            "max": 0.9409679534465872,
+            "range": 0.051261511809881366,
+            "noise_multiplier": 2.0,
+            "noise_threshold": 0.05210971423858195
+        },
+        "application_safety_leakage_geval": {
+            "category": "safety",
+            "direction": "higher_is_better",
+            "values": [
+                1.0,
+                0.9638761034705984,
+                0.9634448429920033
+            ],
+            "mean": 0.9757736488208673,
+            "std": 0.02098174361179501,
+            "min": 0.9634448429920033,
+            "max": 1.0,
+            "range": 0.03655515700799672,
+            "noise_multiplier": 2.0,
+            "noise_threshold": 0.04196348722359002
+        },
+        "application_safety_toxicity": {
+            "category": "safety",
+            "direction": "higher_is_better",
+            "values": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0,
+            "range": 0.0,
+            "noise_multiplier": 2.0,
+            "noise_threshold": 0.0
+        },
+        "application_operational_latency_p50_seconds": {
+            "category": "operational",
+            "direction": "lower_is_better",
+            "values": [
+                6.057209666498238,
+                7.554237000003923,
+                5.5283671250072075
+            ],
+            "mean": 6.3799379305031225,
+            "std": 1.0507865325057733,
+            "min": 5.5283671250072075,
+            "max": 7.554237000003923,
+            "range": 2.0258698749967152,
+            "noise_multiplier": 2.0,
+            "noise_threshold": 2.1015730650115465
+        },
+        "application_operational_latency_p95_seconds": {
+            "category": "operational",
+            "direction": "lower_is_better",
+            "values": [
+                6.716973304140265,
+                7.648427737515886,
+                5.591205424703366
+            ],
+            "mean": 6.652202155453172,
+            "std": 1.0301394989806512,
+            "min": 5.591205424703366,
+            "max": 7.648427737515886,
+            "range": 2.0572223128125193,
+            "noise_multiplier": 2.0,
+            "noise_threshold": 2.0602789979613023
+        },
+        "application_operational_latency_p99_seconds": {
+            "category": "operational",
+            "direction": "lower_is_better",
+            "values": [
+                6.775618960819556,
+                7.656800247516949,
+                5.5967910513430255
+            ],
+            "mean": 6.676403419893177,
+            "std": 1.0335822486630026,
+            "min": 5.5967910513430255,
+            "max": 7.656800247516949,
+            "range": 2.0600091961739233,
+            "noise_multiplier": 2.0,
+            "noise_threshold": 2.0671644973260053
+        },
+        "application_operational_total_input_tokens": {
+            "category": "operational",
+            "direction": "lower_is_better",
+            "values": [
+                2085.0,
+                2085.0,
+                2085.0
+            ],
+            "mean": 2085.0,
+            "std": 0.0,
+            "min": 2085.0,
+            "max": 2085.0,
+            "range": 0.0,
+            "noise_multiplier": 2.0,
+            "noise_threshold": 0.0
+        },
+        "application_operational_total_output_tokens": {
+            "category": "operational",
+            "direction": "lower_is_better",
+            "values": [
+                96.0,
+                97.0,
+                96.0
+            ],
+            "mean": 96.33333333333333,
+            "std": 0.5773502691896257,
+            "min": 96.0,
+            "max": 97.0,
+            "range": 1.0,
+            "noise_multiplier": 2.0,
+            "noise_threshold": 1.1547005383792515
+        },
+        "application_operational_total_tokens": {
+            "category": "operational",
+            "direction": "lower_is_better",
+            "values": [
+                2181.0,
+                2182.0,
+                2181.0
+            ],
+            "mean": 2181.3333333333335,
+            "std": 0.5773502691896257,
+            "min": 2181.0,
+            "max": 2182.0,
+            "range": 1.0,
+            "noise_multiplier": 2.0,
+            "noise_threshold": 1.1547005383792515
+        },
+        "application_operational_total_cost_usd": {
+            "category": "operational",
+            "direction": "lower_is_better",
+            "values": [
+                0.006172500000000001,
+                0.0061825000000000005,
+                0.006172500000000001
+            ],
+            "mean": 0.006175833333333334,
+            "std": 5.773502691896022e-06,
+            "min": 0.006172500000000001,
+            "max": 0.0061825000000000005,
+            "range": 9.999999999999593e-06,
+            "noise_multiplier": 2.0,
+            "noise_threshold": 1.1547005383792045e-05
+        },
+        "application_operational_average_cost_usd": {
+            "category": "operational",
+            "direction": "lower_is_better",
+            "values": [
+                0.0030862500000000005,
+                0.0030912500000000002,
+                0.0030862500000000005
+            ],
+            "mean": 0.003087916666666667,
+            "std": 2.886751345948011e-06,
+            "min": 0.0030862500000000005,
+            "max": 0.0030912500000000002,
+            "range": 4.999999999999796e-06,
+            "noise_multiplier": 2.0,
+            "noise_threshold": 5.773502691896022e-06
+        }
+    }
+}
