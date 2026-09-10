@@ -6,7 +6,7 @@ vectorstore:
 
 retrieval:
   dense_top_k: 10
-  final_top_k: 3
+  final_top_k: 4
   reranker_model: "rerank-v3.5"
   guardrail_minimum_score: 0.40
 
