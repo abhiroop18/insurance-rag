@@ -1,5 +1,6 @@
 from pathlib import Path
 import json
+import os
 
 import mlflow
 
@@ -35,7 +36,10 @@ from insurance_rag.evaluation.eval_utils import (
 )
 
 from insurance_rag.utils.config import load_config
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
 # =============================================================================
 # PROJECT CONFIGURATION
@@ -47,8 +51,9 @@ PROJECT_ROOT = (
     .parents[2]
 )
 
-MLFLOW_TRACKING_URI = (
-    "http://127.0.0.1:5000"
+MLFLOW_TRACKING_URI = os.getenv(
+    "MLFLOW_TRACKING_URI",
+    "http://127.0.0.1:5000",
 )
 
 MLFLOW_EXPERIMENT_NAME = (
@@ -920,11 +925,10 @@ def execute_experiment():
 
             "status":
                 "completed",
-
-            "use":
-                "candidate"
         })
 
+
+        mlflow.set_tag("use", "candidate")
 
 # =============================================================================
 # ENTRY POINT

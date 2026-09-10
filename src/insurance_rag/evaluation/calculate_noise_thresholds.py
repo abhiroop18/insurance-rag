@@ -4,7 +4,10 @@ import statistics
 
 import mlflow
 from mlflow import MlflowClient
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 
 # =============================================================================
 # PROJECT CONFIGURATION
@@ -16,8 +19,9 @@ PROJECT_ROOT = (
     .parents[3]
 )
 
-MLFLOW_TRACKING_URI = (
-    "http://127.0.0.1:5000"
+MLFLOW_TRACKING_URI = os.getenv(
+    "MLFLOW_TRACKING_URI",
+    "http://127.0.0.1:5000",
 )
 
 MLFLOW_EXPERIMENT_NAME = (

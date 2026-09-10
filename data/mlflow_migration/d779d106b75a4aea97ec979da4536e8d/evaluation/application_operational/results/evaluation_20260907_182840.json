@@ -1,0 +1,34 @@
+{
+  "statistics": {
+    "num_requests": 2,
+    "latency_p50_seconds": 5.9240742295078235,
+    "latency_p95_seconds": 6.2779474610477335,
+    "latency_p99_seconds": 6.309402859406837,
+    "total_input_tokens": 2085,
+    "total_output_tokens": 99,
+    "total_tokens": 2184,
+    "total_cost_usd": 0.0062025,
+    "average_cost_usd": 0.00310125,
+    "model": "gpt-4.1-mini"
+  },
+  "requests": [
+    {
+      "question": "What is the grace period if I pay my premium monthly?",
+      "latency_seconds": 6.317266708996613,
+      "input_tokens": 1229,
+      "output_tokens": 57,
+      "total_tokens": 1286,
+      "cost_usd": 0.0036425,
+      "model": "gpt-4.1-mini"
+    },
+    {
+      "question": "How long is the free look period after I receive my policy document?",
+      "latency_seconds": 5.530881750019034,
+      "input_tokens": 856,
+      "output_tokens": 42,
+      "total_tokens": 898,
+      "cost_usd": 0.0025599999999999998,
+      "model": "gpt-4.1-mini"
+    }
+  ]
+}

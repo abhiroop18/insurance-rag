@@ -1,15 +1,21 @@
 from pathlib import Path
 import json
 import mlflow
+import os
+from dotenv import load_dotenv
 
-
+load_dotenv()
 # =============================================================================
 # CONFIGURATION
 # =============================================================================
 
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
 
-MLFLOW_TRACKING_URI = "http://127.0.0.1:5000"
+MLFLOW_TRACKING_URI = os.getenv(
+    "MLFLOW_TRACKING_URI",
+    "http://127.0.0.1:5000",
+)
+
 MLFLOW_EXPERIMENT_NAME = "insurance-rag-experiments"
 
 NOISE_THRESHOLD_PATH = (

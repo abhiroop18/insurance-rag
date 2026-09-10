@@ -1,0 +1,21 @@
+[
+  {
+    "id": "q01",
+    "input": "What is the grace period if I pay my premium monthly?",
+    "expected_output": "15 days for monthly premium payment mode (30 days for all other modes).",
+    "retrieved_context": [
+      "\"Grace Period\" means the specified period of time, immediately following the premium due date during which premium payment can be made to renew or continue a policy in force without loss of continuity benefits.",
+      "The grace period for payment of the premium for all types of insurance policies shall be: fifteen days where premium payment mode is monthly and thirty days in all other cases."
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "q02",
+    "input": "How long is the free look period after I receive my policy document?",
+    "expected_output": "30 days from the date of receipt of the policy document (not applicable for policies with tenure less than a year).",
+    "retrieved_context": [
+      "Every insured of new individual health insurance policies, except for those policies with tenure of less than a year, shall be provided a free look period of 30 days beginning from the date of receipt of policy document, whether received electronically or otherwise, to review the terms and conditions of such policy."
+    ],
+    "difficulty": "easy"
+  }
+]
