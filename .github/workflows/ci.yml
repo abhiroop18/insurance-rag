@@ -44,6 +44,15 @@ jobs:
       - name: Install dependencies
         run: uv sync --locked
 
+      - name: Check Langfuse configuration
+        run: |
+          if [[ "$LANGFUSE_HOST" =~ ^https?:// ]]; then
+            echo "LANGFUSE_HOST format looks correct"
+          else
+            echo "LANGFUSE_HOST is missing http:// or https://"
+            exit 1
+          fi
+
       - name: Build document chunks
         run: |
           uv run python -m insurance_rag.ingestion.load_documents
